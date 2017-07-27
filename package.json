@@ -1,24 +1,33 @@
 {
   "name": "ember-cli-microsoft-speech-shim",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "The default blueprint for ember-cli addons.",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "microsoft",
+    "speech",
+    "bing",
+    "cognitive",
+    "services",
+    "speech-to-text"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "Matt Mazzola",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/mattmazzola/ember-cli-microsoft-speech-shim",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
     "test": "ember try:each"
   },
   "dependencies": {
-    "ember-cli-babel": "^6.3.0"
+    "broccoli-funnel": "^1.2.0",
+    "broccoli-merge-trees": "^2.0.0",
+    "ember-cli-babel": "^6.3.0",
+    "microsoft-speech-browser-sdk": "0.0.3"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
