@@ -8,10 +8,6 @@ var MergeTrees = require('broccoli-merge-trees');
 module.exports = {
   name: 'ember-cli-microsoft-speech-shim',
 
-  isDevelopingAddon: function () {
-    return true;
-  },
-
   included: function (app) {
     this._super.included.apply(this, arguments);
 
