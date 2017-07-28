@@ -1,0 +1,59 @@
+body {
+    font-family: 'Arial', 'Helvetica', 'Verdana', 'Tahoma', sans-serif;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input, textarea {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+.form {
+    display: grid;
+    grid-template: auto / 40% 50%;
+    grid-gap: 1em;
+}
+
+.form > *:nth-child(2n - 1) {
+    text-align: right;
+    margin: 0;
+    padding: 0.5em;
+    border: 1px solid transparent;
+}
+
+.form > *:nth-child(2n) {
+    margin: 0;
+    padding: 0.5em;
+    border: 1px solid rgba(0,0,0,0.5);
+}
+
+pre {
+    margin: 0;
+    overflow: auto;
+}
+
+.text {
+    padding: 0.5em;
+    border: 1px solid rgba(0,0,0,0.5);
+}
+.response {
+    margin: 0;
+    padding: 0.5em;
+    border: 1px solid rgba(0,0,0,0.5);
+}
+
+.buttons {
+    text-align: center;
+    padding: 1em;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 1em;
+}

@@ -1,3 +1,27 @@
-<h2 id="title">Welcome to Ember</h2>
+<h1>Microsoft Cognitive Services</h1>
+<h2>Bing Speech API</h2>
 
-{{outlet}}
+<p>This dummy application is a recreation of the offical sample in Ember: https://github.com/Azure-Samples/SpeechToText-WebSockets-Javascript</p>
+
+<form {{action (action "startRecording") on="submit"}} >
+    <div class="form">
+        <label for="subscriptionKey">Subscription Key:</label>
+        {{input type="text" value=subscriptionKey placeholder="Enter subscription key from Azure Portal" required="true" title="You must enter your Subscription Key"}}
+        <div>Status:</div>
+        <div class="text">{{status}}</div>
+        <div>Hypothesis:</div>
+        <div class="text">{{hypothesis}}</div>
+        <div>API Response:</div>
+        <pre class="text">{{phrase}}</pre>
+    </div>
+
+    <div class="buttons">
+        <button type="submit" disabled={{isRecording}} >
+            Start Recording
+        </button>
+
+        <button type="button" {{action (action "stopRecording")}} disabled={{isNotRecording}} >
+            Stop Recording
+        </button>
+    </div>
+</form>
